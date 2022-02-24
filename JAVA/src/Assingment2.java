@@ -11,8 +11,6 @@
    The array element at index 2 = 4
    The array element successfully */
 
-//AKHILSINGH (Sec-H,Roll no -01)
-
 import java.util.Scanner;
 public class Assingment2 {
     public static void main(String[] args) {

@@ -1,5 +1,4 @@
-
-
+//AKHIL SINGH (Sec -H,  Rollno -21)
 
 
 //The methods which are used in this program are following
@@ -11,6 +10,7 @@
 // SetPriority()
 //SetDaemon()
 //yield()
+//join()
 
 class GuessANumber extends Thread {
     private int number;

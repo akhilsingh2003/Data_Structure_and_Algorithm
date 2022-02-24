@@ -6,7 +6,7 @@ public class operation_jdbc extends jdbc {
     void insert() {
         try {
             Scanner sc = new Scanner(System.in);
-            System.out.println("Enter student id:");
+            System.out.println("Enter student sid:");
             int id = sc.nextInt();
 
             System.out.println("Enter student name:");
@@ -33,7 +33,9 @@ public class operation_jdbc extends jdbc {
 
     void delete() {
         try {
-            int id = 9; // for integer values
+            Scanner sc2=new Scanner(System.in);
+            System.out.println("Enter the Sid to Delete: ");
+            int id = sc2.nextInt();
             String delquery = "delete from Student where sid=" + id;
 
             //For String valuesuse this syntax(delete from table values where string= '"+string+"'";)
@@ -73,11 +75,11 @@ public class operation_jdbc extends jdbc {
 
     void update() {
         try {
-            int id = 01; // for integer values
+            Scanner sc1=new Scanner(System.in);
+            System.out.println("Enter the Sid to Delete: ");
+            int id = sc1.nextInt(); // for integer values
             String updquery = "update Student set cource='BBA' where sid=01";
-
-            //For String values this syntax(delete from table values where string= '"+string+"'";)
-            //String cource="BBA";
+            //String cource=sc1.next();
             //String updquery = "update from student set cource='Btech' where cource='"+cource+"'";
 
             PreparedStatement pst2 = con.prepareStatement(updquery);
@@ -101,8 +103,8 @@ public class operation_jdbc extends jdbc {
             System.out.println("Press 5 for Exit");
 
             System.out.println("Enter your choice:");
-            Scanner sc2 = new Scanner(System.in);
-            int choice = sc2.nextInt();
+            Scanner sc3 = new Scanner(System.in);
+            int choice = sc3.nextInt();
 
             switch (choice) {
                 case 1:

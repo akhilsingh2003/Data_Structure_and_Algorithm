@@ -51,7 +51,7 @@ public class average_marks {
 
 
             } catch (ArithmeticException e) {
-                System.out.println(e.getMessage());
+                System.out.println(e.getMessage()); 
             } catch (NegativeValuesException e) {
                 System.out.println(e.getMessage());
             } catch (ValuesOutOfRangeException e) {
@@ -62,6 +62,7 @@ public class average_marks {
             System.out.println("Marks of subject A: " + subA);
             System.out.println("Marks of subject B: " + subB);
             System.out.println("Marks of subject C: " + subC);
+            System.out.println("average marks is "+((subA+subB+subC)/3));
         }
 
 

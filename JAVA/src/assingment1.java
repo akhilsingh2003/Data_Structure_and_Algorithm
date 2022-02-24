@@ -13,7 +13,6 @@
         Enter an integer: Java
         Entered input is not a valid format for an integer*/
 
-// Akhil singh ( Sec -H rollno --01)
 
 import java.util.Scanner;
 

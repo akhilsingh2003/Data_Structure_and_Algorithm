@@ -31,6 +31,7 @@ class base {
 public class inheritance {
     public static void main(String[] args) {
         derived b=new derived();
+        base f =new derived();
         b.setX(4);
         System.out.println(b.getX());
     }

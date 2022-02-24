@@ -32,6 +32,7 @@ public class arraylist {
         System.out.println(al2); //[]
         System.out.println(al.contains(87)); //false
         System.out.println(al.contains((23))); //true
+
         System.out.println(al.isEmpty()); //false
         System.out.println(al2.isEmpty()); //true
         al.add(0,32);
@@ -51,11 +52,6 @@ public class arraylist {
         al2.add(87);
         al2.add(54);
         System.out.println(al2); //[98, 66, 87, 54]
-        al2.add(98);
-        al2.add(66);
-        al2.add(87);
-        al2.add(54);
-        System.out.println(al2); //[98, 66, 87, 54]
         List<Integer> al3=new ArrayList<>();
         al3=al2.subList(0,3);
         System.out.println(al3); //[98, 66, 87]
@@ -63,9 +59,9 @@ public class arraylist {
         System.out.println(al4); //[98, 66, 87]
         ArrayList al5=new ArrayList(6);
         al5.add(67);
-        al5.add("Akhil");
-        al5.add("Singh");
-        System.out.println(al5); //[67, Akhil, Singh]
+        al5.add("Avinash");
+        al5.add("Tiwari");
+        System.out.println(al5); //[67, Avinash, Tiwari]
         ArrayList al6=new ArrayList();
         al6.add("Test");
         al6.add(98.67);
@@ -75,8 +71,8 @@ public class arraylist {
         {
             System.out.println(i.next());
             /*67
-            Akhil
-            Singh */
+            Avinash
+            Tiwari */
         }
 
     }

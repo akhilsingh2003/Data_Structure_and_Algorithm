@@ -29,11 +29,11 @@ class SendUsingThreads extends Thread
     public void run()
     {
         // This will ensure that only one thread sends a message at a time.
-        synchronized(sender)
-        {
+//        synchronized(sender)
+        //{
             // synchronizing the send object
             sender.sendMessage(message);
-        }
+       // }
     }
 }
 // Driver class
